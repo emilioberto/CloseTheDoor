@@ -53,6 +53,7 @@ function addSoundsListeners(sounds) {
     sounds.forEach((sound) => {
       if (Math.random() < sound.rate) {
         playAudioFromUrl(sound.url);
+        return;
       }
     });
   });
